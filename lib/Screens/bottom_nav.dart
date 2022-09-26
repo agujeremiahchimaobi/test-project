@@ -13,10 +13,12 @@ class _BottomNavState extends State<BottomNav> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 19, vertical: 20),
         child: GNav(
-          padding: EdgeInsets.all(16),
-          gap: 8,
+
+          padding: EdgeInsets.all(13),
+          tabBorderRadius: 8,
+          gap: 10,
           tabBackgroundColor: Colors.orange.shade100,
           tabs: [
 
