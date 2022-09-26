@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'bottom_modal.dart';
 import 'profile_page.dart';
 
 class Home extends StatefulWidget {
@@ -20,7 +21,7 @@ class _HomeState extends State<Home> {
   static List<Widget> pages = <Widget>[
     Container(color: Colors.red),
     Container(color: Colors.green),
-    Container(color: Colors.blue),
+    const Modal(),
     const Profile()
   ];
 

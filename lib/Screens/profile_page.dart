@@ -15,30 +15,26 @@ class _ProfileState extends State<Profile> {
       children: [
         Stack(
           children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              height: 200,
-              color: Colors.orange,
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 50),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const CircleAvatar(
-                      radius: 25,
-                      backgroundColor: Colors.white,
-                      child: Icon(
-                        Icons.menu,
-                        color: Colors.black,
-                      ),
+            Image.asset('images/header2.png'),
+            Padding(
+              padding: const EdgeInsets.only(top: 30, left: 20, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const CircleAvatar(
+                    radius: 25,
+                    backgroundColor: Colors.white,
+                    child: Icon(
+                      Icons.menu,
+                      color: Colors.black,
                     ),
-                    CircleAvatar(
-                      radius: 25,
-                      backgroundColor: Colors.white,
-                      child: Image.asset('images/Notification.png', height: 25),
-                    )
-                  ],
-                ),
+                  ),
+                  CircleAvatar(
+                    radius: 25,
+                    backgroundColor: Colors.white,
+                    child: Image.asset('images/Notification.png', height: 25),
+                  )
+                ],
               ),
             ),
             Column(
@@ -77,8 +73,10 @@ class _ProfileState extends State<Profile> {
                             ),
                             const Text(
                               'Verified',
-                              style: TextStyle(color: Colors.grey),
-                            )
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
                           ],
                         )
                       ],
@@ -113,7 +111,7 @@ class _ProfileState extends State<Profile> {
                 const Cards(
                   text: 'Terms and privacy policy',
                   prefix: 'images/card.png',
-                )
+                ),
               ],
             ),
           ],
